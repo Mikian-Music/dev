@@ -7,39 +7,6 @@ body {
   color: #333;
 }
 
-nav {
-  background-color: #333;
-  padding: 15px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.logo {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
 h1 {
   color: #ff6f61;
   font-size: 3em;
@@ -71,6 +38,30 @@ p {
   background-color: #e65a50;
 }
 
-.music-player {
-  margin-top: 40px;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff6f61;
+}
+
+.logo {
+  margin: 30px auto;
+  width: 300px;
+}
+
+.music {
+  margin: 30px auto;
 }
