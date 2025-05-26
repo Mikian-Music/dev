@@ -23,11 +23,35 @@
     </ul>
 
     <p>Notre communauté compte <strong>14,9k abonnés</strong> ! Merci pour votre soutien 🎉</p>
+
+    <!-- Bouton Énigme -->
+    <button onclick="showEnigme()" class="enigme-button">Énigme</button>
+
+    <!-- Bloc énigme caché -->
+    <div id="enigmeContainer" style="display:none;">
+      <p><strong>Voici l'énigme :</strong><br>
+      Quelle est le vrai nom de Mikian Music ?<br>
+      <em>Indice : Mikian est une programmeuse canadienne.</em></p>
+
+      <form id="enigmeForm">
+        <label for="user_email">Votre adresse e-mail :</label><br>
+        <input type="email" name="user_email" required placeholder="ex : tonadresse@mail.com"><br><br>
+
+        <label for="user_answer">Votre réponse :</label><br>
+        <input type="text" name="user_answer" required placeholder="Tape ta réponse ici"><br><br>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <p id="message" style="display:none; color:green; font-weight:bold;">✅ Merci ! Votre réponse a été envoyée avec succès.</p>
+    </div>
   </main>
+  
   <footer>
     <p>© 2025 Mikian Music</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

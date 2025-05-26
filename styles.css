@@ -1,4 +1,4 @@
-/* ... style existant ... */
+/* Styles existants */
 
 @keyframes pop-in {
   0% { transform: scale(0); opacity: 0; }
@@ -9,6 +9,7 @@
   width: 150px;
   margin: 20px auto;
   animation: pop-in 0.8s ease-out;
+  display: block;
 }
 
 nav a {
@@ -20,7 +21,7 @@ nav a:hover {
   color: #ffee00;
 }
 
-button {
+button, .enigme-button {
   background-color: #ff6666;
   color: white;
   padding: 0.5em 1em;
@@ -28,10 +29,52 @@ button {
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
 }
 
-button:hover {
+button:hover, .enigme-button:hover {
   transform: scale(1.1) rotate(3deg);
   background-color: #ff4444;
+}
+
+/* Container de l'énigme */
+#enigmeContainer {
+  background-color: #fff4f4;
+  border: 2px solid #ff6666;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(255, 102, 102, 0.5);
+  animation: pop-in 0.5s ease forwards;
+}
+
+/* Inputs et textarea dans le formulaire énigme */
+#enigmeForm input[type="email"],
+#enigmeForm input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1.5px solid #ff6666;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#enigmeForm input[type="email"]:focus,
+#enigmeForm input[type="text"]:focus {
+  border-color: #ff4444;
+  outline: none;
+}
+
+/* Message de confirmation */
+#message {
+  text-align: center;
+  font-weight: bold;
+  color: #2e7d32; /* vert */
+  margin-top: 15px;
 }
