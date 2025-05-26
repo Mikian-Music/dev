@@ -1,0 +1,37 @@
+/* ... style existant ... */
+
+@keyframes pop-in {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.logo {
+  width: 150px;
+  margin: 20px auto;
+  animation: pop-in 0.8s ease-out;
+}
+
+nav a {
+  transition: transform 0.3s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1) rotate(-2deg);
+  color: #ffee00;
+}
+
+button {
+  background-color: #ff6666;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1) rotate(3deg);
+  background-color: #ff4444;
+}
